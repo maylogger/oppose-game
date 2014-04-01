@@ -53,7 +53,8 @@ var randomText = function(){
       checkNumb = 1
       $('.final').html('挺');
     }
-    $('.showContent').html(str+'服貿')
+    $('.showContent').html(str+'服貿');
+    $('.bigtext').bigtext({maxfontsize: 120});
   }
 };
 
@@ -66,6 +67,7 @@ var startGame = function()  {
     }else if (initTime == 0){
       clearTimeout(main);
       $('.showpoint').html(point);
+      $('.bigtext').bigtext({maxfontsize: 120});
       $('body').removeClass('status-playing').addClass('status-end');
       point = 0;
       initTime = 30
