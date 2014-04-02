@@ -50,15 +50,8 @@
   .quiz span {
     line-height: 1;
     display: block;
-    margin-top: -.5em;
-    visibility: hidden;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    transform: scale(0.5);
-    opacity: 0; }
-    .quiz span.out {
+    margin-top: -.5em; }
+    .playing .quiz span {
       visibility: hidden;
       -webkit-transform: scale(0.5);
       -moz-transform: scale(0.5);
@@ -66,7 +59,7 @@
       -o-transform: scale(0.5);
       transform: scale(0.5);
       opacity: 0; }
-    .quiz span.in {
+    .playing .quiz span.in {
       visibility: visible;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       -moz-transition: -moz-transform 0.3s, opacity 0.3s;
