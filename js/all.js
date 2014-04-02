@@ -76,7 +76,7 @@ var endGame = function()  {
   } else if ( point < 14 ) {
     comment += "臉書被檢舉照片太醜<br>王炳忠：言語霸凌!"
   } else if ( point < 15 ) {
-    comment += "「你們不配當中國人」語畢，哄堂大笑"
+    comment += "「你們不配當中國人」<br>語畢，哄堂大笑"
   } else if ( point < 16 ) {
     comment += "馬總統民調只有九趴，<br>你們是不是也是多數在霸凌少數"
   } else if ( point < 17 ) {
@@ -86,11 +86,13 @@ var endGame = function()  {
   } else if ( point < 19 ) {
     comment += "辨識度堪稱糾察隊"
   } else if ( point < 20 ) {
-    comment += "辨識度堪稱糾察隊"
+    comment += "林飛帆表示：陳為廷在我旁邊啦！"
   } else if ( point < 21 ) {
     comment += "林飛帆表示：陳為廷在我旁邊啦！"
   } else if ( point < 25 ) {
     comment += "你的分辨率太高，TVBS、中天都做不了假新聞..."
+  } else if ( point < 32 ) {
+    comment += "你證明了 Z < B"
   } else {
     comment += "你證明了 Z < B"
   }
