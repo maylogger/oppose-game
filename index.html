@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 
     <meta property="og:url" content="http://www.oppose.tw/" />
-    <meta property="og:image" content="http://www.oppose.tw/images/fb.jpg" />
+    <meta property="og:image" content="http://www.oppose.tw/images/fb.png" />
     <meta property="og:title" content="反*n服貿" />
     <meta property="og:site_name" content="反*n服貿遊戲"/>
-    <meta property="og:description" content="反*n 服貿：按下開始鈕審查後，30 秒內必須答出接下來畫面的反*n服貿，到底是反、還是不反？分享你的分數" />
+    <meta property="og:description" content="反*n 服貿：按下開始鈕審查後，60 秒內必須答出接下來畫面的反*n服貿，到底是反、還是不反？分享你的分數" />
 
     <!-- Loading Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -29,11 +29,11 @@
     <div class="intro view">
   <div class="container text-center">
     <div class="intro-text">
-      <h1 class="bigtext">
+      <h1 class="bigtext" data-maxfontsize="120" data-minfontsize="14">
         <span>反*n 服貿</span>
       </h1>
-      <p class="bigtext">
-        <span>按下開始審查後</span><span>30 秒內必須答出</span><span>接下來畫面的反*n服貿</span><span>到底是反、還是不反？分享你的分數</span>
+      <p class="bigtext" data-maxfontsize="120" data-minfontsize="14">
+        <span>按下開始審查後</span><span>60 秒內必須答出</span><span>接下來畫面的反*n服貿</span><span>到底是反、還是不反？分享你的分數</span>
       </p>
       <button class="btn btn-hg btn-primary btn-wide play">開始審查!!</button>
     </div>
@@ -41,8 +41,8 @@
 </div>
 <div class="playing view">
   <div class="h1 sec text-center timestamp"></div>
-  <div class="quiz text-center">
-    <span class="showContent out"></span>
+  <div class="quiz text-center" data-maxfontsize="100">
+    <span class="show-content"></span>
   </div>
   <div class="answer text-center">
     <p>
@@ -57,15 +57,15 @@
   </div>
 </div>
 <div class="gameover view showGameOver">
-  <div class="quiz bigtext text-center">
+  <div class="quiz bigtext text-center" data-maxfontsize="120">
     <span class="shake shake-constant shake-hard">Game Over</span>
   </div>
 </div>
 <div class="end view">
-  <div class="h1 bigtext sec text-center">
+  <div class="h1 bigtext sec text-center" data-maxfontsize="36" data-minfontsize="14">
     <span>同學... 你的成績是</span>
   </div>
-  <div class="quiz text-center">
+  <div class="quiz text-center" data-maxfontsize="200">
     <span class="showpoint"></span>
   </div>
   <div class="answer text-center">
@@ -89,7 +89,7 @@
     <!-- // <script src="js/jquery.placeholder.js"></script> -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
     <script src="js/bigtext.js"></script>
-    <script src="js/all.js"></script>
+    <script src="js/game.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,4 +1,9 @@
 .sec {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
   opacity: .3;
   -webkit-transition: -webkit-transform 1s;
   -moz-transition: -moz-transform 1s;
@@ -36,7 +41,7 @@
     .intro p span:nth-child(3) {
       opacity: 0.6; }
     .intro p span:nth-child(4) {
-      opacity: 0.4; }
+      opacity: 0.5; }
 
 .quiz {
   position: absolute;
@@ -50,7 +55,12 @@
   .quiz span {
     line-height: 1;
     display: block;
-    margin-top: -.5em; }
+    margin-top: -.5em;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; }
     .playing .quiz span {
       visibility: hidden;
       -webkit-transform: scale(0.5);
@@ -152,14 +162,20 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; }
 
 .view {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .intro {
   -webkit-transition: -webkit-transform 0.3s;
