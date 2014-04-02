@@ -150,7 +150,7 @@
       var i, numbers, quizStr, _i;
 
       $showContent.removeClass('in');
-      numbers = this.point < 5 ? this.random(5) : this.point < 10 ? this.random(6) + 2 : this.random(8) + 5;
+      numbers = this.point === 0 ? 0 : this.point === 1 ? 1 : this.point < 5 ? this.random(3) + 2 : this.point < 10 ? this.random(6) + 2 : this.random(8) + 5;
       quizStr = '';
       for (i = _i = 0; _i <= numbers; i = _i += 1) {
         quizStr += '反';
