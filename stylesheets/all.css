@@ -110,7 +110,7 @@
   padding-top: 24px;
   padding-bottom: 24px;
   padding-bottom: 24px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(66, 91, 117, 0.75);
   -webkit-transition: -webkit-transform 0.5s;
   -webkit-transition-delay: 3s;
   -moz-transition: -moz-transform 0.5s 3s;
@@ -122,6 +122,10 @@
     padding: 0 0 0 5px; }
   .playing .answer .btn-no .glyphicon {
     padding: 0 5px 0 0; }
+  .end .answer .btn.btn-inverse {
+    background: #1d2834; }
+    .end .answer .btn.btn-inverse:hover {
+      background: #263544; }
   .end .answer {
     -webkit-transform: translateY(500px);
     -moz-transform: translateY(500px);
@@ -141,7 +145,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(204, 204, 204, 0.1);
+  background: rgba(247, 249, 249, 0.1);
   font-size: 24px;
   line-height: 1.1;
   padding: 5px 10px; }
@@ -163,7 +167,9 @@ html, body {
   width: 100%;
   overflow: hidden;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background: #425b75;
+  color: #f7f9f9; }
 
 .view {
   position: absolute;
@@ -201,10 +207,10 @@ html, body {
   transform: scale(0.7);
   opacity: 0;
   z-index: 1;
-  background: white; }
+  background: #425b75; }
 
 .end {
-  background: white;
+  background: #425b75;
   z-index: 2;
   overflow: hidden; }
 
