@@ -7,7 +7,7 @@ $('#start').on("click", function(){
   return false;
 });
 
-var initTime = 3;
+var initTime = 30;
 var checkNumb;
 var point = 0;
 var clicked = 0;
@@ -100,7 +100,7 @@ var endGame = function()  {
   $('body').removeClass('status-playing').addClass('status-end');
   point = 0;
   comment = "點評：";
-  initTime = 3;
+  initTime = 30;
   clearTimeout(main);
   $('.timestamp').html(initTime);
   setTimeout(function(){
