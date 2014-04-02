@@ -189,9 +189,11 @@ html, body {
 
 .end {
   background: white;
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
 
 .gameover {
+  position: relative;
   background: #a00;
   z-index: 3;
   color: white;
