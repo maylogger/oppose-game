@@ -195,7 +195,7 @@ html, body {
   background: #a00;
   z-index: 3;
   color: white;
-  top: 100%;
+  top: 150%;
   -webkit-transition: top 1s ease-in;
   -moz-transition: top 1s ease-in;
   -o-transition: top 1s ease-in;
