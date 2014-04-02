@@ -143,7 +143,7 @@ $(document).on('keydown', function( e ){
 $play.on('click',function(){
   game.init();
   $('body').removeClass('status-intro status-end').addClass('status-playing')
-  $('.gameover').toggleClass('in')
+  $('.gameover').toggleClass('.showGameOver')
 });
 
 $yes.on('click',function(){
