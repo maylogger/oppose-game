@@ -19,7 +19,7 @@ var randomText = function(){
   if (initTime > 0){
     clicked = 0;
     // var numbers = Math.ceil(Math.random()*(20-0));
-    var numbers = ( point < 5 ) ? Math.ceil(Math.random()*(4-0)) : Math.ceil(Math.random()*(13-0));
+    var numbers = ( point < 9 ) ? Math.ceil(Math.random()*(4-0)) : Math.ceil(Math.random()*(13-0));
     var str = '';
     for (var i = numbers ; i >= 0; i--) {
       str += '反';
@@ -62,11 +62,11 @@ var endGame = function()  {
   } else if ( point < 7 ) {
     comment += "你的偷懶害立法院失守了"
   } else if ( point < 8 ) {
-    comment += "快抵抗白衫軍攻勢！再玩一次！"
+    comment += "白衫軍攻勢太強！<br>再玩一次！"
   } else if ( point < 9 ) {
     comment += "請注意務必逐題審查！"
   } else if ( point < 10 ) {
-    comment += "快守不住了！立法院需要你的支援！"
+    comment += "快出門！<br>立法院需要你的支援！"
   } else if ( point < 11 ) {
     comment += "Over My Dead Body"
   } else if ( point < 12 ) {
@@ -74,11 +74,11 @@ var endGame = function()  {
   } else if ( point < 13 ) {
     comment += "公聽會有辦等於沒辦！"
   } else if ( point < 14 ) {
-    comment += "臉書被檢舉照片太醜　王炳忠：言語霸凌!"
+    comment += "臉書被檢舉照片太醜<br>王炳忠：言語霸凌!"
   } else if ( point < 15 ) {
     comment += "「你們不配當中國人」語畢，哄堂大笑"
   } else if ( point < 16 ) {
-    comment += "馬總統民調只有九趴，你們是不是也是多數在霸凌少數"
+    comment += "馬總統民調只有九趴，<br>你們是不是也是多數在霸凌少數"
   } else if ( point < 17 ) {
     comment += "先立法後答題"
   } else if ( point < 18 ) {
