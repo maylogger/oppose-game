@@ -1,6 +1,5 @@
-$('.bigtext').each(function(){
-  $(this).bigtext({maxfontsize: 120});
-});
+$('.intro .bigtext').bigtext({maxfontsize: 120, minfontsize:14 });
+$('.end .bigtext').bigtext({maxfontsize: 36, minfontsize:14 });
 
 $('#start').on("click", function(){
   $('.status-intro').removeClass('status-intro').addClass('status-playing');
