@@ -202,7 +202,7 @@ html, body {
   -moz-transition: top 1s ease-in;
   -o-transition: top 1s ease-in;
   transition: top 1s ease-in; }
-  .gameover.in {
+  .gameover.showGameOver {
     -webkit-transition: 0;
     -moz-transition: 0;
     -o-transition: 0;
