@@ -7,7 +7,7 @@ $('#start').on("click", function(){
   return false;
 });
 
-var initTime = 30;
+var initTime = 3;
 var checkNumb;
 var point = 0;
 var clicked = 0;
@@ -100,11 +100,11 @@ var endGame = function()  {
   $('body').removeClass('status-playing').addClass('status-end');
   point = 0;
   comment = "點評：";
-  initTime = 30;
+  initTime = 3;
   clearTimeout(main);
   $('.timestamp').html(initTime);
   setTimeout(function(){
-    $('.gameover').toggleClass('showGameOver')
+    $('.gameover').removeClass('showGameOver')
   }, 1000);
 
 };
@@ -143,7 +143,7 @@ $(document).on('keydown', function( e ){
 $play.on('click',function(){
   game.init();
   $('body').removeClass('status-intro status-end').addClass('status-playing')
-  $('.gameover').toggleClass('.showGameOver')
+  $('.gameover').addClass('showGameOver')
 });
 
 $yes.on('click',function(){
