@@ -7,7 +7,7 @@ $('#start').on("click", function(){
   return false;
 });
 
-var initTime = 3;
+var initTime = 30;
 var checkNumb;
 var point = 0;
 var clicked = 0;
