@@ -39,6 +39,8 @@
     line-height: 1.1;
     margin: 0 0 15px;
     font-family: w8, sans-serif; }
+    .jf-active .intro h1 {
+      font-weight: normal; }
   .intro p {
     font-family: w3, sans-serif;
     line-height: 1;
