@@ -9,6 +9,9 @@
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
   transition: transform 1s; }
+  @media (min-width: 40em) {
+    .sec {
+      padding-top: 3%; } }
   .end .sec {
     -webkit-transform: translateY(-500px);
     -moz-transform: translateY(-500px);
@@ -22,26 +25,32 @@
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-.intro .intro-text {
-  width: 80%;
-  max-width: 400px;
-  margin: 10% auto 0; }
-.intro h1 {
-  line-height: 1.1;
-  margin: 0 0 15px; }
-.intro p {
-  line-height: 1;
-  margin: 0 0 2em; }
-  .intro p span {
-    margin-bottom: 15px; }
-    .intro p span:nth-child(1) {
-      opacity: 1; }
-    .intro p span:nth-child(2) {
-      opacity: 0.8; }
-    .intro p span:nth-child(3) {
-      opacity: 0.6; }
-    .intro p span:nth-child(4) {
-      opacity: 0.5; }
+.intro {
+  overflow: auto; }
+  .intro .intro-text {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10% 0; }
+    @media (max-height: 600px) {
+      .intro .intro-text {
+        padding-top: 24px 0; } }
+  .intro h1 {
+    line-height: 1.1;
+    margin: 0 0 15px; }
+  .intro p {
+    line-height: 1;
+    margin: 0 0 2em; }
+    .intro p span {
+      margin-bottom: 15px; }
+      .intro p span:nth-child(1) {
+        opacity: 1; }
+      .intro p span:nth-child(2) {
+        opacity: 0.8; }
+      .intro p span:nth-child(3) {
+        opacity: 0.6; }
+      .intro p span:nth-child(4) {
+        opacity: 0.5; }
 
 .quiz {
   position: absolute;
@@ -82,11 +91,10 @@
       transform: scale(1);
       opacity: 1; }
     .end .quiz span {
-      -webkit-transition: -webkit-transform 2s, opacity 2s;
-      -webkit-transition-delay: 1s, 1s;
-      -moz-transition: -moz-transform 2s 1s, opacity 2s 1s;
-      -o-transition: -o-transform 2s 1s, opacity 2s 1s;
-      transition: transform 2s 1s, opacity 2s 1s;
+      -webkit-transition: 0;
+      -moz-transition: 0;
+      -o-transition: 0;
+      transition: 0;
       -webkit-transform: scale(0) rotate(-720deg);
       -moz-transform: scale(0) rotate(-720deg);
       -ms-transform: scale(0) rotate(-720deg);
@@ -94,6 +102,11 @@
       transform: scale(0) rotate(-720deg);
       opacity: 0; }
     .status-end .end .quiz span {
+      -webkit-transition: -webkit-transform 2s, opacity 2s;
+      -webkit-transition-delay: 1s, 1s;
+      -moz-transition: -moz-transform 2s 1s, opacity 2s 1s;
+      -o-transition: -o-transform 2s 1s, opacity 2s 1s;
+      transition: transform 2s 1s, opacity 2s 1s;
       -webkit-transform: scale(1) rotate(0deg);
       -moz-transform: scale(1) rotate(0deg);
       -ms-transform: scale(1) rotate(0deg);
@@ -110,29 +123,44 @@
   padding-top: 24px;
   padding-bottom: 24px;
   padding-bottom: 24px;
-  background: rgba(66, 91, 117, 0.75);
-  -webkit-transition: -webkit-transform 0.5s;
-  -webkit-transition-delay: 3s;
-  -moz-transition: -moz-transform 0.5s 3s;
-  -o-transition: -o-transform 0.5s 3s;
-  transition: transform 0.5s 3s; }
+  background: rgba(66, 91, 117, 0.75); }
+  @media (min-width: 40em) {
+    .answer {
+      padding-bottom: 7%; } }
   .answer .btn + .btn {
     margin-left: .5em; }
+  .answer .btn-group .btn {
+    margin-left: 0; }
   .playing .answer .btn-yes .glyphicon {
     padding: 0 0 0 5px; }
   .playing .answer .btn-no .glyphicon {
     padding: 0 5px 0 0; }
   .end .answer .btn.btn-inverse {
+    margin-left: .5em;
     background: #1d2834; }
     .end .answer .btn.btn-inverse:hover {
       background: #263544; }
+  @media (min-width: 40em) {
+    .end .answer .comment {
+      font-size: 22px; } }
+  .end .answer .btn-group .btn:last-child {
+    border-left: 2px solid #257fba; }
   .end .answer {
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    transition: 0;
     -webkit-transform: translateY(500px);
     -moz-transform: translateY(500px);
     -ms-transform: translateY(500px);
     -o-transform: translateY(500px);
     transform: translateY(500px); }
   .status-end .end .answer {
+    -webkit-transition: -webkit-transform 0.5s;
+    -webkit-transition-delay: 2s;
+    -moz-transition: -moz-transform 0.5s 2s;
+    -o-transition: -o-transform 0.5s 2s;
+    transition: transform 0.5s 2s;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -220,10 +248,10 @@ html, body {
   z-index: 3;
   color: white;
   top: 150%;
-  -webkit-transition: top 1s ease-in;
-  -moz-transition: top 1s ease-in;
-  -o-transition: top 1s ease-in;
-  transition: top 1s ease-in; }
+  -webkit-transition: top 0.5s ease-in;
+  -moz-transition: top 0.5s ease-in;
+  -o-transition: top 0.5s ease-in;
+  transition: top 0.5s ease-in; }
   .gameover.showGameOver {
     -webkit-transition: 0;
     -moz-transition: 0;
